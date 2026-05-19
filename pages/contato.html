@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Café Petrópolis</title>
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <div class="topo">
+          <div class="logo">
+            <a href="../index.html">Café Petrópolis</a>
+          </div>
+          <nav class="menu">
+            <a href="../index.html">Inicio</a>
+            <a href="./about.html">Quem somos</a>
+            <a href="./cardapio.html">Cardapio</a>
+            <a href="./pedido.html">Pedido</a>
+            <a href="./contato.html">Contato</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="pagina-interna">
+      <section class="secao">
+        <div class="container">
+          <div class="titulo-secao">
+            <h1>Entre em contato</h1>
+            <p>
+              Esta pagina reune os canais de atendimento da cafeteria e um
+              formulario simples.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-5">
+              <div class="cartao contato-info">
+                <h2>Informacoes</h2>
+                <p><strong>Endereco:</strong> Rua das Flores, 150 - Centro</p>
+                <p><strong>Telefone:</strong> (21) 99999-1234</p>
+                <p><strong>Email:</strong> contato@cafepetropolis.com</p>
+                <p><strong>Horario:</strong> Segunda a Sabado, das 8h as 19h</p>
+                <p><strong>Instagram:</strong> @cafepetropolis</p>
+              </div>
+            </div>
+
+            <div class="col-md-7">
+              <form id="formulario-contato" class="formulario">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" required />
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="5"
+                  required
+                ></textarea>
+                <button class="botao" type="submit">Enviar mensagem</button>
+                <p id="mensagem-formulario" class="mensagem"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container">
+        <p>Pagina de contato com formulario e informacoes da empresa</p>
+        <div class="redes-sociais">
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+          <a href="https://www.whatsapp.com/" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedido - Café Petrópolis</title>
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <div class="topo">
+          <div class="logo">
+            <a href="../index.html">Café Petrópolis</a>
+          </div>
+          <nav class="menu">
+            <a href="../index.html">Inicio</a>
+            <a href="./about.html">Quem somos</a>
+            <a href="./cardapio.html">Cardapio</a>
+            <a href="./pedido.html">Pedido</a>
+            <a href="./contato.html">Contato</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="pagina-interna">
+      <section class="secao">
+        <div class="container">
+          <div class="titulo-secao">
+            <h1>Monte seu pedido</h1>
+            <p>
+              Esta pagina usa JavaScript para somar os itens escolhidos e
+              mostrar o valor total.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-7">
+              <div class="caixa-pedido">
+                <article
+                  class="item-pedido"
+                  data-nome="Cafe expresso"
+                  data-preco="6"
+                >
+                  <div>
+                    <h2>Cafe expresso</h2>
+                    <p>Bebida tradicional servida na hora.</p>
+                  </div>
+                  <div class="controle">
+                    <button class="botao-controle diminuir" type="button">
+                      -
+                    </button>
+                    <span class="quantidade">0</span>
+                    <button class="botao-controle aumentar" type="button">
+                      +
+                    </button>
+                  </div>
+                </article>
+                <article
+                  class="item-pedido"
+                  data-nome="Pao de queijo"
+                  data-preco="8"
+                >
+                  <div>
+                    <h2>Pao de queijo</h2>
+                    <p>Porcao com 4 unidades.</p>
+                  </div>
+                  <div class="controle">
+                    <button class="botao-controle diminuir" type="button">
+                      -
+                    </button>
+                    <span class="quantidade">0</span>
+                    <button class="botao-controle aumentar" type="button">
+                      +
+                    </button>
+                  </div>
+                </article>
+                <article
+                  class="item-pedido"
+                  data-nome="Bolo de chocolate"
+                  data-preco="11"
+                >
+                  <div>
+                    <h2>Bolo de chocolate</h2>
+                    <p>Fatia doce para acompanhar o cafe.</p>
+                  </div>
+                  <div class="controle">
+                    <button class="botao-controle diminuir" type="button">
+                      -
+                    </button>
+                    <span class="quantidade">0</span>
+                    <button class="botao-controle aumentar" type="button">
+                      +
+                    </button>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <aside class="resumo">
+                <h2>Resumo do pedido</h2>
+                <p id="resumo-pedido">Nenhum item escolhido.</p>
+                <p class="valor-total">
+                  Total: <strong id="total-pedido">R$ 0,00</strong>
+                </p>
+                <button id="finalizar-pedido" class="botao" type="button">
+                  Finalizar pedido
+                </button>
+                <p id="mensagem-pedido" class="mensagem"></p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container">
+        <p>Funcionalidade simples com JavaScript basico</p>
+        <div class="redes-sociais">
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+          <a href="https://www.whatsapp.com/" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
